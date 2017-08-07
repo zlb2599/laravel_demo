@@ -10,6 +10,6 @@ class IndexController extends  Controller{
 
 
     public function index(){
-        echo 'hello word';
+        echo route('test');
     }
 }
