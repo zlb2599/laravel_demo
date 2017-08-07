@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('demo',array('uses'=>'IndexController@index'));
+Route::get('demo',array('uses'=>'IndexController@index',
+                         'as'=>'test'   ));
