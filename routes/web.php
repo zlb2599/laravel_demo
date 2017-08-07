@@ -15,6 +15,4 @@ Route::get('/', function () {
     return ('welcome');
 });
 
-Route::get('demo', function () {
-    return 111;
-});
+Route::get('demo',array('uses'=>'IndexController@index'));
